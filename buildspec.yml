@@ -3,13 +3,12 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo "Installing dependencies..."
-      - npm install
+      - echo "No dependencies to install for static frontend files."
   build:
     commands:
-      - echo "Building the frontend..."
-      - npm run build
+      - echo "No build step required for static files."
 artifacts:
   files:
-    - '**/*'
-  base-directory: build # Adjust based on your build output directory
+    - '**/*'               
+    - index.html          
+  base-directory: .        
